@@ -273,38 +273,31 @@ article ol {
 article ol li{
   position: relative;
 }
-article ol ol{
-  margin-left: -35px;
-}
-article ol ol li{
-  padding-left: 45px;
-  margin-top: 20px;
-}
 article ol ol li:before{
   font-weight: 400;
+  left: 12px;
 }
-article ol ol li::after{
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 0;
-  width: calc(100% + 12px);
-  height: 10px;
-  background-color: #fff;
+article ol ol li span{
+  padding-left: 45px;
 }
 article ol > li {
   display: block;
   counter-increment: item;
   position: relative;
   margin-top: 10px;
+}
+article ol > li span{
+  display: inline-block;
   padding: 6px 12px;
   background-color: var(--light-grey);
+  width: 100%;
   padding-left: 35px;
 }
 article ol > li::before {
   content: counters(item, ".") ". ";
   position: absolute;
   left: 12px;
+  top: 6px;
   color: var(--blue);
   font-weight: 600;
 }
