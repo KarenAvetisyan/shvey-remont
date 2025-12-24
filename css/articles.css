@@ -270,14 +270,27 @@ article ol {
   list-style: none;
   margin-bottom: 0;
 }
+article ol li{
+  position: relative;
+}
 article ol ol{
   margin-left: -35px;
 }
 article ol ol li{
   padding-left: 45px;
+  margin-top: 20px;
 }
 article ol ol li:before{
   font-weight: 400;
+}
+article ol ol li::after{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: calc(100% + 12px);
+  height: 10px;
+  background-color: #fff;
 }
 article ol > li {
   display: block;
